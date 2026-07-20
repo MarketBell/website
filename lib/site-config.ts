@@ -32,8 +32,8 @@ export const siteConfig = {
   // Contact (used everywhere, including all legal pages)
   contact: {
     email: "support@marketbell.in",
-    phone: "+91 7427404280",
-    phoneHref: "+917427404280",
+    phone: "+91 7827404280",
+    phoneHref: "+917827404280",
   },
 
   // Store links — app not yet live; both show "Coming soon" until URLs exist.

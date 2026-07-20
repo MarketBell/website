@@ -37,6 +37,10 @@ export function StructuredData({ nonce }: { nonce?: string }) {
     <script
       type="application/ld+json"
       nonce={nonce}
+      // The browser blanks out the nonce value in the DOM after applying CSP,
+      // so the client reads it back as "" — a benign server/client mismatch on
+      // this non-executable data script. Suppress the hydration warning.
+      suppressHydrationWarning
       // Content is fully static and defined above — no user input.
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />

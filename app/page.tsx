@@ -152,11 +152,8 @@ export default function HomePage() {
               Start learning the markets with a community that grows with you.
             </p>
             <div className="mt-8 flex justify-center">
-              <StoreBadges tone="dark" />
+              <StoreBadges tone="dark" className="items-center" />
             </div>
-            <p className="mt-6 text-sm text-white/50">
-              Available soon on Google Play and the App Store.
-            </p>
           </Reveal>
         </div>
       </section>

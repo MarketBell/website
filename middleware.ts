@@ -11,21 +11,33 @@ import { NextRequest, NextResponse } from "next/server";
  */
 export function middleware(request: NextRequest) {
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
+  const isDev = process.env.NODE_ENV !== "production";
+
+  // Production: strict, nonce-based script policy (no eval, no inline).
+  // Development: Next's HMR / react-refresh needs eval + inline + a websocket,
+  // so relax those for dev only — production stays locked down.
+  const scriptSrc = isDev
+    ? `script-src 'self' 'unsafe-eval' 'unsafe-inline'`
+    : `script-src 'self' 'nonce-${nonce}' 'strict-dynamic'`;
+  const connectSrc = isDev
+    ? `connect-src 'self' ws: http:`
+    : `connect-src 'self'`;
 
   const csp = [
     `default-src 'self'`,
-    `script-src 'self' 'nonce-${nonce}' 'strict-dynamic'`,
+    scriptSrc,
     `style-src 'self' 'unsafe-inline'`,
     `img-src 'self' data: blob:`,
     `font-src 'self'`,
-    `connect-src 'self'`,
+    connectSrc,
     `object-src 'none'`,
     `base-uri 'self'`,
     `form-action 'self'`,
     `frame-ancestors 'none'`,
     `frame-src 'none'`,
     `manifest-src 'self'`,
-    `upgrade-insecure-requests`,
+    // Upgrade to HTTPS in production only (would break http://localhost in dev).
+    ...(isDev ? [] : [`upgrade-insecure-requests`]),
   ].join("; ");
 
   const requestHeaders = new Headers(request.headers);

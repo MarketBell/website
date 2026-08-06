@@ -160,3 +160,39 @@ deploy on Vercel. Pull requests get their own preview URLs.
 ---
 
 © Yenew Technologies Private Limited. All rights reserved.
+
+---
+
+## Shared live-session links (`/live/<id>`)
+
+The mobile app's share button produces `https://marketbell.in/live/<id>`. Two pieces
+make that work:
+
+**`app/live/[id]/page.tsx`** renders the session for anyone without the app — title,
+host, time, length, price, seats left — and points them at the install. Detail comes
+from `GET https://api.marketbell.in/api/v1/live/<id>/public`, an endpoint that exists
+for this page and deliberately returns poster-level fields only. It carries no room
+identifier and no token, and nothing on the page grants access: joining happens in the
+app, which checks registration and payment per user. A page that could let someone in
+would give paid sessions away.
+
+**`public/.well-known/assetlinks.json`** lets Android verify the domain so the link
+opens the app directly instead of showing an app chooser. Excluded from the CSP
+middleware so the verifier gets a plain JSON response.
+
+### The fingerprint in assetlinks.json will need changing
+
+It currently holds the **debug** signing certificate, because the Android release
+build is still configured with `signingConfig = signingConfigs.getByName("debug")`.
+That is fine for testing on a device and wrong for release. When a real release
+keystore exists:
+
+1. Read its fingerprint: `keytool -list -v -keystore <release.jks> -alias <alias>`
+2. Replace the value in `sha256_cert_fingerprints`
+3. If the app ships through Play App Signing, **add Google's** signing-key fingerprint
+   as well (Play Console → Setup → App signing) — Google re-signs the upload, so the
+   installed app carries their key, not yours. Both can sit in the array.
+
+Until then Android shows a chooser rather than opening the app straight away, which
+still works.
+

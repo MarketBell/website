@@ -52,11 +52,14 @@ export function middleware(request: NextRequest) {
 }
 
 export const config = {
-  // Run on all paths except static assets and image optimizer, which don't need a nonce.
+  // Run on all paths except static assets and image optimizer, which don't need a
+  // nonce. `.well-known` is excluded too: Android's App Links verifier fetches
+  // assetlinks.json to decide whether marketbell.in/live/<id> may open the app, and
+  // that response should be a plain JSON file with nothing else attached to it.
   matcher: [
     {
       source:
-        "/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)",
+        "/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|\.well-known).*)",
       missing: [
         { type: "header", key: "next-router-prefetch" },
         { type: "header", key: "purpose", value: "prefetch" },

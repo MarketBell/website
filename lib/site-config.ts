@@ -11,7 +11,14 @@ export const siteConfig = {
   description:
     "Market Bell is an e-learning and trader community platform — expert-led courses, practice quizzes, certificates, live sessions, and a mentor marketplace. A product of Yenew Technologies Private Limited.",
   domain: "marketbell.in",
-  url: "https://marketbell.in",
+  // The `www` host, deliberately. Everything derived from `metadataBase` — the
+  // OpenGraph image, canonical links, the sitemap — used the apex, which 308s to
+  // www. Most crawlers follow that, but not all of them do it for an IMAGE, so a
+  // link preview could silently fall back to no image at all. The app already
+  // standardises on www for shared course and live-session links, because
+  // Android's App Links verifier does not follow redirects either. One host
+  // everywhere is one less thing that behaves differently per client.
+  url: "https://www.marketbell.in",
 
   // Operating legal entity (must be disclosed for KYC / verification)
   company: {

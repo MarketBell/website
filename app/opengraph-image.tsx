@@ -62,7 +62,7 @@ export default function OpengraphImage() {
           }}
         >
           <span>Learn the markets.</span>
-          <span>Trade with a community.</span>
+          <span>Interact with a community.</span>
         </div>
 
         <div

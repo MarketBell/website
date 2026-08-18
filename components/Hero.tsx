@@ -52,7 +52,7 @@ export function Hero() {
             <h1 className="mt-6 text-balance text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
               Learn the markets.
               <br />
-              <span className="text-gradient">Trade with a community.</span>
+              <span className="text-gradient">Interact with a community.</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70">

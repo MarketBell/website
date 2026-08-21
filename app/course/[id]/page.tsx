@@ -73,7 +73,7 @@ export async function generateMetadata({
   const { id } = await params;
   const course = await getCourse(id);
   if (!course) {
-    return { title: "Course", description: "Trading courses on Market Bell." };
+    return { title: "Course", description: "Online courses on Market Bell." };
   }
   const by = course.mentor?.name ? ` by ${course.mentor.name}` : "";
   return {
@@ -81,7 +81,7 @@ export async function generateMetadata({
     // This is what shows when the link is pasted into WhatsApp, which is where
     // most of these links will be opened.
     description:
-      (course.description || `A trading course${by} on Market Bell.`).slice(0, 200),
+      (course.description || `A course${by} on Market Bell.`).slice(0, 200),
     alternates: { canonical: `/course/${id}` },
     openGraph: {
       title: course.title,

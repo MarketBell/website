@@ -21,7 +21,7 @@ const tiers = [
     highlight: false,
     features: [
       "Access to free courses and lessons",
-      "Join the trader community",
+      "Join the community",
       "Practice quizzes on free content",
       "Earn referral credits (1 credit = ₹1)",
     ],

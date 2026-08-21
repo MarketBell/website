@@ -8,22 +8,22 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Market Bell is an e-learning and trader community platform, a product of Yenew Technologies Private Limited. Learn about our mission, vision, and what we offer.",
+    "Market Bell is an e-learning and community platform, a product of Yenew Technologies Private Limited. Learn about our mission, vision, and what we offer.",
   alternates: { canonical: "/about" },
 };
 
 const offerings = [
   {
     title: "Comprehensive Learning",
-    body: "Structured courses, educational content, live sessions, and market-focused resources for traders at every stage.",
+    body: "Structured courses, educational content, live sessions, and practical resources for learners at every stage.",
   },
   {
-    title: "Practical Market Insights",
-    body: "Analysis, strategies, and actionable insights bridging theory and real-world conditions.",
+    title: "Practical, Applied Insights",
+    body: "Lessons, strategies, and actionable takeaways bridging theory and real-world practice.",
   },
   {
     title: "Collaborative Community",
-    body: "Connect with like-minded traders, exchange ideas, and learn from fellow members.",
+    body: "Connect with like-minded learners, exchange ideas, and learn from fellow members.",
   },
   {
     title: "Continuous Growth",
@@ -34,10 +34,10 @@ const offerings = [
 const reasons = [
   "Expert-driven educational resources",
   "Interactive and engaging learning experience",
-  "Supportive trader community",
-  "Practical market-focused approach",
+  "A supportive learner community",
+  "A practical, applied approach",
   "Continuous learning and skill development",
-  "Commitment to responsible trading education",
+  "A commitment to responsible, high-quality education",
 ];
 
 export default function AboutPage() {
@@ -48,8 +48,8 @@ export default function AboutPage() {
         <SectionHeading
           dark
           eyebrow="About Market Bell"
-          title="Connecting Minds, Creating Wealth"
-          subtitle="A dynamic e-learning and trader community platform designed to empower aspiring and experienced market participants with the knowledge, skills, and network they need to succeed."
+          title="Connecting Minds, Creating Futures"
+          subtitle="A dynamic e-learning and community platform designed to empower learners with the knowledge, skills, and network they need to grow."
         />
       </Section>
 
@@ -58,34 +58,34 @@ export default function AboutPage() {
           <Reveal>
             <h2 className="text-2xl font-bold text-navy">Who we are</h2>
             <p className="mt-3 leading-relaxed text-navy/75">
-              Market Bell is a dynamic e-learning and trader community platform
-              designed to empower aspiring and experienced market participants
-              with the knowledge, skills, and network they need to succeed in
-              today&apos;s financial markets. We believe that successful trading
-              is built on education, discipline, and continuous learning. Our
-              platform brings together expert-led learning resources, practical
-              market insights, and a collaborative community where traders can
-              learn, share, and grow together.
+              Market Bell is a dynamic e-learning and community platform
+              designed to empower learners with the knowledge, skills, and
+              network they need to grow — whatever subject they are studying. We
+              believe that real progress is built on quality education,
+              discipline, and continuous learning. Our platform brings together
+              expert-led learning resources, practical lessons, and a
+              collaborative community where learners can study, share, and grow
+              together.
             </p>
           </Reveal>
 
           <Reveal>
             <h2 className="text-2xl font-bold text-navy">Our mission</h2>
             <p className="mt-3 leading-relaxed text-navy/75">
-              To make quality trading education accessible to everyone and
-              create a supportive ecosystem where individuals can develop
-              confidence, improve decision-making, and achieve their financial
-              goals through informed market participation.
+              To make quality education accessible to everyone and create a
+              supportive ecosystem where individuals can build confidence,
+              sharpen their skills, and achieve their goals through structured,
+              informed learning.
             </p>
           </Reveal>
 
           <Reveal>
             <h2 className="text-2xl font-bold text-navy">Our vision</h2>
             <p className="mt-3 leading-relaxed text-navy/75">
-              To become a trusted global destination for trading education and
+              To become a trusted global destination for education and
               community-driven learning, where individuals are empowered with
-              the knowledge, confidence, and support needed to navigate
-              financial markets responsibly and successfully.
+              the knowledge, confidence, and support they need to reach their
+              goals.
             </p>
           </Reveal>
         </div>

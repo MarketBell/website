@@ -39,7 +39,7 @@ export default function HomePage() {
       <Section id="features">
         <SectionHeading
           eyebrow="Everything you need"
-          title="A complete platform for market learners"
+          title="A complete platform for learners"
           subtitle="From your first lesson to your first certificate — courses, community, and mentors in one place."
         />
         <FeatureGrid />
@@ -50,7 +50,7 @@ export default function HomePage() {
         <SectionHeading
           eyebrow="How it works"
           title="From sign up to certified in four steps"
-          subtitle="A simple path designed to build real, lasting market knowledge."
+          subtitle="A simple path designed to build real, lasting knowledge."
         />
         <Steps />
       </Section>
@@ -66,7 +66,7 @@ export default function HomePage() {
               Teach what you know. Earn as you grow.
             </h2>
             <p className="mt-4 text-lg leading-relaxed text-navy/70">
-              Share your market expertise with a growing community of learners.
+              Share your expertise with a growing community of learners.
               Publish courses, host sessions, and build your reputation on the
               Market Bell mentor marketplace — with secure, transparent payouts.
             </p>
@@ -94,7 +94,7 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-5">
                 {[
                   { k: "Expert-led", v: "Courses & lessons" },
-                  { k: "Community", v: "Trader network" },
+                  { k: "Community", v: "Learner network" },
                   { k: "Certificates", v: "On completion" },
                   { k: "1 credit = ₹1", v: "Refer & earn" },
                 ].map((s) => (
@@ -149,7 +149,7 @@ export default function HomePage() {
               Download Market Bell
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-lg text-white/70">
-              Start learning the markets with a community that grows with you.
+              Start learning with a community that grows with you.
             </p>
             <div className="mt-8 flex justify-center">
               <StoreBadges tone="dark" className="items-center" />

@@ -9,7 +9,7 @@ import { Reveal } from "@/components/Reveal";
 export const metadata: Metadata = {
   title: "Features",
   description:
-    "Explore Market Bell's features — expert-led courses, practice quizzes, certificates, a mentor marketplace, trader community, live sessions, and refer & earn.",
+    "Explore Market Bell's features — expert-led courses, practice quizzes, certificates, a mentor marketplace, community, live sessions, and refer & earn.",
   alternates: { canonical: "/features" },
 };
 
@@ -20,8 +20,8 @@ export default function FeaturesPage() {
         <SectionHeading
           dark
           eyebrow="Features"
-          title="Everything you need to learn the markets"
-          subtitle="Courses, community, and mentors — thoughtfully designed to turn curiosity into confident, informed market participation."
+          title="Everything you need to learn"
+          subtitle="Courses, community, and mentors — thoughtfully designed to turn curiosity into confident, capable learning."
         />
       </Section>
 

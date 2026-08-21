@@ -50,15 +50,15 @@ export function Hero() {
             </span>
 
             <h1 className="mt-6 text-balance text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-              Learn the markets.
+              Learn something new.
               <br />
               <span className="text-gradient">Interact with a community.</span>
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
-              Market Bell is an e-learning and trader community platform —
+              Market Bell is an e-learning and community platform —
               expert-led courses, practice quizzes, certificates, live sessions,
-              and a mentor marketplace. Connecting Minds, Creating Wealth.
+              and a mentor marketplace. Connecting Minds, Creating Futures.
             </p>
 
             <div className="mt-8">

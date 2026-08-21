@@ -7,9 +7,9 @@
 export const siteConfig = {
   // Product / brand
   brand: "Market Bell",
-  tagline: "Connecting Minds, Creating Wealth",
+  tagline: "Connecting Minds, Creating Futures",
   description:
-    "Market Bell is an e-learning and trader community platform — expert-led courses, practice quizzes, certificates, live sessions, and a mentor marketplace. A product of Yenew Technologies Private Limited.",
+    "Market Bell is an e-learning and community platform — expert-led courses, practice quizzes, certificates, live sessions, and a mentor marketplace. A product of Yenew Technologies Private Limited.",
   domain: "marketbell.in",
   // The `www` host, deliberately. Everything derived from `metadataBase` — the
   // OpenGraph image, canonical links, the sitemap — used the apex, which 308s to
@@ -47,6 +47,13 @@ export const siteConfig = {
   stores: {
     googlePlay: { available: false, url: "" },
     appStore: { available: false, url: "" },
+  },
+
+  // Official social profiles.
+  social: {
+    facebook: "https://www.facebook.com/share/18svNdsuvw/",
+    instagram: "https://www.instagram.com/marketbell.in",
+    youtube: "https://youtube.com/@marketbellofficial",
   },
 
   // Last content review date shown on legal pages.

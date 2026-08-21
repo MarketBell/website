@@ -75,7 +75,7 @@ export async function generateMetadata({
   if (!session) {
     return {
       title: "Live session",
-      description: "Live trading sessions on Market Bell.",
+      description: "Live learning sessions on Market Bell.",
     };
   }
   const when = formatWhen(session.scheduledAt);

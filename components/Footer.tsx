@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin, Facebook, Instagram, Youtube } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
 import { mainNav, legalNav } from "@/lib/nav";
 import { Logo } from "./Logo";
 
-const { company, contact } = siteConfig;
+const { company, contact, social } = siteConfig;
 
 export function Footer() {
   const year = 2026;
@@ -17,8 +17,8 @@ export function Footer() {
           <div>
             <Logo tone="dark" />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/60">
-              {siteConfig.tagline}. An e-learning and trader community platform
-              for market education.
+              {siteConfig.tagline}. An e-learning and community platform
+              for learners everywhere.
             </p>
 
             <div className="mt-6 space-y-1.5 text-sm text-white/60">
@@ -50,6 +50,37 @@ export function Footer() {
                   {contact.phone}
                 </a>
               </p>
+            </div>
+
+            {/* Follow us */}
+            <div className="mt-6 flex items-center gap-4">
+              <a
+                href={social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Market Bell on Facebook"
+                className="text-white/60 hover:text-white"
+              >
+                <Facebook size={20} />
+              </a>
+              <a
+                href={social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Market Bell on Instagram"
+                className="text-white/60 hover:text-white"
+              >
+                <Instagram size={20} />
+              </a>
+              <a
+                href={social.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Market Bell on YouTube"
+                className="text-white/60 hover:text-white"
+              >
+                <Youtube size={20} />
+              </a>
             </div>
           </div>
 
@@ -92,7 +123,7 @@ export function Footer() {
           </p>
           <p>
             Payments processed securely via Razorpay. Market Bell is an
-            educational platform — not investment advice.
+            educational platform.
           </p>
         </div>
       </div>

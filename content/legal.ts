@@ -34,7 +34,7 @@ export const termsDoc: LegalDoc = {
     {
       heading: "1. About Market Bell",
       paragraphs: [
-        "An educational and community-driven platform providing trading and financial-market learning resources. Market Bell does not provide investment advisory, portfolio management, brokerage services, or guaranteed recommendations.",
+        "An educational and community-driven platform providing online courses and learning resources across a range of subjects. Market Bell is an education platform only — it does not provide professional, financial, legal, medical, or other regulated advisory services, and does not guarantee any outcome.",
       ],
     },
     {
@@ -52,19 +52,19 @@ export const termsDoc: LegalDoc = {
     {
       heading: "4. Educational Purpose Only",
       paragraphs: [
-        "All content is for educational and informational purposes only — not investment, financial, tax, legal, or personalized trading advice. Conduct independent research and consult professionals.",
+        "All content is for educational and informational purposes only. It is not professional advice of any kind (including financial, tax, legal, or medical), and it is not a substitute for consulting a qualified professional. Conduct your own research before acting on anything you learn.",
       ],
     },
     {
       heading: "5. Risk Disclosure",
       paragraphs: [
-        "Trading and investing involve significant risk. Markets can be volatile; past performance does not guarantee future results. You are solely responsible for your decisions and should never invest money you cannot afford to lose.",
+        "Education supports learning; it does not guarantee any particular result, income, job, qualification, or other outcome. Any results depend on your own effort and circumstances. You are solely responsible for how you apply what you learn.",
       ],
     },
     {
       heading: "6. Community Guidelines",
       paragraphs: [
-        "No false/misleading information, harassment, hate speech, illegal/harmful content, fraudulent schemes, impersonation, spam, or market manipulation. We may remove content and suspend accounts that violate standards.",
+        "No false/misleading information, harassment, hate speech, illegal/harmful content, fraudulent schemes, impersonation, or spam. We may remove content and suspend accounts that violate these standards.",
       ],
     },
     {
@@ -106,7 +106,7 @@ export const termsDoc: LegalDoc = {
     {
       heading: "13. Limitation of Liability",
       paragraphs: [
-        "To the maximum extent permitted by law, Market Bell is not liable for trading/investment losses, lost profits or data, business interruption, or indirect/incidental/consequential damages. Use is at your own risk.",
+        "To the maximum extent permitted by law, Market Bell is not liable for any loss arising from how you apply what you learn, or for lost profits or data, business interruption, or indirect/incidental/consequential damages. Use is at your own risk.",
       ],
     },
     {
@@ -125,7 +125,7 @@ export const termsDoc: LegalDoc = {
       heading: "16. Contact",
       paragraphs: [
         contactLine,
-        "By using Market Bell you acknowledge that you have read, understood, and agreed to these Terms and Conditions, including the educational-purpose and risk-disclosure provisions.",
+        "By using Market Bell you acknowledge that you have read, understood, and agreed to these Terms and Conditions, including the educational-purpose and no-guaranteed-outcomes provisions.",
       ],
     },
   ],
@@ -135,12 +135,12 @@ export const privacyDoc: LegalDoc = {
   slug: "privacy",
   title: "Privacy Policy",
   intro:
-    "Your privacy is important to us. This Privacy Policy explains how Market Bell collects, uses, stores, and safeguards your information when you use our e-learning and trader community platform.",
+    "Your privacy is important to us. This Privacy Policy explains how Market Bell collects, uses, stores, and safeguards your information when you use our e-learning and community platform.",
   sections: [
     {
       heading: "1. Introduction",
       paragraphs: [
-        'Market Bell ("we," "our," or "us") provides educational content, learning resources, community discussions, market insights, and related services. By using our platform you agree to the collection and use of information in accordance with this policy.',
+        'Market Bell ("we," "our," or "us") provides educational content, learning resources, community discussions, and related services. By using our platform you agree to the collection and use of information in accordance with this policy.',
       ],
     },
     {
@@ -161,7 +161,7 @@ export const privacyDoc: LegalDoc = {
     {
       heading: "4. Educational Purpose Disclaimer",
       paragraphs: [
-        "Content and discussions are for educational and informational purposes only and should not be considered financial, investment, legal, or professional advice. Users are responsible for their own research and decisions.",
+        "Content and discussions are for educational and informational purposes only and are not professional advice of any kind (including financial, legal, or medical). Users are responsible for their own research and decisions.",
       ],
     },
     {

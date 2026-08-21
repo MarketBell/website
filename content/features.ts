@@ -22,7 +22,7 @@ export const features: Feature[] = [
     icon: BookOpen,
     title: "Courses & video lessons",
     description:
-      "Structured, expert-led courses and video lessons covering market fundamentals to advanced strategy — learn at your own pace.",
+      "Structured, expert-led courses and video lessons covering fundamentals to advanced topics — learn at your own pace.",
   },
   {
     icon: ClipboardCheck,
@@ -44,9 +44,9 @@ export const features: Feature[] = [
   },
   {
     icon: Users,
-    title: "Trader community",
+    title: "Community",
     description:
-      "Connect with like-minded traders, exchange ideas, ask questions, and grow together in a supportive community.",
+      "Connect with like-minded learners, exchange ideas, ask questions, and grow together in a supportive community.",
   },
   {
     icon: Radio,
@@ -63,9 +63,9 @@ export const features: Feature[] = [
   },
   {
     icon: LineChart,
-    title: "Practical market insights",
+    title: "Practical, applied insights",
     description:
-      "Analysis, strategies, and actionable insights that bridge theory and real-world market conditions.",
+      "Lessons, strategies, and actionable takeaways that bridge theory and real-world practice.",
   },
 ];
 
@@ -80,16 +80,16 @@ export const steps: Step[] = [
   {
     title: "Learn",
     description:
-      "Explore free and paid courses, video lessons, and market insights from expert mentors.",
+      "Explore free and paid courses, video lessons, and insights from expert mentors.",
   },
   {
     title: "Practice",
     description:
-      "Test yourself with quizzes and apply what you learn in the trader community.",
+      "Test yourself with quizzes and apply what you learn in the community.",
   },
   {
     title: "Get certified",
     description:
-      "Complete courses, earn certificates, and keep levelling up your market knowledge.",
+      "Complete courses, earn certificates, and keep levelling up your knowledge.",
   },
 ];

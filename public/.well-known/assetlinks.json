@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.billionit.market_bell",
       "sha256_cert_fingerprints": [
-        "0B:9B:D9:2B:1A:4F:36:41:B2:C8:3B:9F:4B:A8:E4:D7:4B:3C:2B:7A:76:46:5F:B3:23:1D:D9:54:FA:08:D9:D2"
+        "0B:9B:D9:2B:1A:4F:36:41:B2:C8:3B:9F:4B:A8:E4:D7:4B:3C:2B:7A:76:46:5F:B3:23:1D:D9:54:FA:08:D9:D2",
+        "EE:A3:AC:A0:AD:81:33:AE:94:44:69:D2:BD:BE:E5:02:B7:4D:B7:E3:CA:19:6A:1A:A8:D0:E5:7A:64:4E:3D:89"
       ]
     }
   }

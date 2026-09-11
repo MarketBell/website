@@ -62,16 +62,24 @@ export default function DeleteAccountPage() {
         </GlassCard>
 
         <GlassCard tone="light">
-          <h2 className="text-lg font-semibold text-navy">What gets deleted</h2>
+          <h2 className="text-lg font-semibold text-navy">
+            What gets deleted, and what we keep
+          </h2>
           <p className="mt-3 text-sm leading-relaxed text-navy/70">
             Deleting your account permanently removes your profile, course
             enrolments and progress, credits, saved items, and community activity
             (posts, comments and messages). This cannot be undone.
           </p>
+          <p className="mt-3 text-sm leading-relaxed text-navy/70">
+            In-app deletions take effect immediately. Requests sent by email are
+            completed within <strong>7 days</strong> of verifying your identity.
+          </p>
           <p className="mt-3 text-sm leading-relaxed text-navy/60">
-            Records we are required to keep for legal, tax or accounting purposes
-            (for example, invoices for completed purchases) may be retained as
-            required by law.
+            For legal, tax and accounting compliance we retain a limited set of
+            transaction records — for example, invoices and payment records for
+            completed purchases — for up to <strong>8 years</strong>, as required
+            by Indian tax, GST and company law. These records are kept solely for
+            legal compliance and are not used for any other purpose.
           </p>
         </GlassCard>
       </div>
